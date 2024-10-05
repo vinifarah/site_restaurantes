@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            margin: 200px; /* Removendo margens padrão */
+            padding: 0; /* Removendo padding padrão */
+        }
+
+        .cabecalho {
+            text-align: center;
+            margin-top: 120px; /* Adicionando margem superior */
+        }
+
+        .cabecalho h1 {
+            color: black;
+            font-size: 70px;
+            animation: pulse 0.97s infinite alternate; /* Adicionando animação de pulso */
+            cursor: pointer; /* Adicionando cursor para indicar interatividade */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .cabecalho p {
+            color: rgb(95, 36, 36);
+            font-size: 40px; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px; /* Adicionando margem superior */
+        }
+
+        .caixas {
+            padding: 60px 100px; /* Ajustando o padding */
+            border: 7px solid #3d382d;
+            background: linear-gradient(45deg, #e7baa5, #f88888); /* Adicionando efeito degradê */
+            color: #333;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 26px;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none; /* Removendo sublinhado padrão */
+            display: inline-block; /* Para que a âncora envolva todo o botão */
+            
+        }
+
+        /* Efeito de hover */
+        .caixas:hover {
+            background: linear-gradient(45deg, #e89a9a, #ffc2c2); /* Invertendo as cores no hover */
+            color: rgb(13, 13, 13);
+            transform: scale(1.1); /* Aumentando o tamanho no hover */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adicionando sombra no hover */
+        }
+
+        .rodape p{
+            margin-top: 170px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: larger;
+            text-align: center;
+            animation: pulse 0.97s infinite alternate; /* Adicionando animação de pulso */
+            cursor: pointer; /* Adicionando cursor para indicar interatividade */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+            
+        }
+    </style>
+</head>
+<body>  
+
+    <div class="cabecalho">
+        <h1>Restaurantes <Br> São Paulo</h1>
+        <br><br><br><br>
+        <hr> 
+        <p>Olá! Fico muito feliz que esteja interessado(a) em nosso guia 
+            gastronômico paulistano. Fizemos de tudo com muito carinho para
+             que sua busca por um local que satisfaça seu desejo de 
+             conhecer a capital culinária mundial seja feita da
+              melhor forma possível!</p>
+        <hr> <br> <br>
+        <p>Escolha dentro os estilos de comida abaixo o seu preferido : </p>
+    </div>
+
+    <div class="container">
+        <a href="pagina.churrascarias.rodizio.html" class="caixas">Churrascarias Rodízio</a>
+    </div>
+
+    <div class="container">
+        <a href="pag.carnes.la.carte.html" class="caixas">Carnes à la Carte</a>
+    </div>
+    
+    <div class="container">
+        <a href="link-para-italiano-restaurantes.html" class="caixas">Italiano Restaurantes</a>
+    </div>
+
+    <div class="container">
+        <a href="link-para-italiano-osterias-e-trattorias.html" class="caixas">Italiano Osterias e Trattorias</a>
+    </div>
+
+    <div class="container">
+        <a href="link-para-frutos-do-mar.html" class="caixas">Frutos do Mar</a>
+    </div>
+
+    <div class="container">
+        <a href="link-para-rooftops-e-especiais.html" class="caixas">Rooftops e especiais</a>
+    </div>
+
+
+    <div class="rodape">
+        
+        <p> em breve : recomendações de restaurantes japoneses, árabes, pizzarias e hamburguerias</p>
+    </div>
+</body>
+</html>
